@@ -24,7 +24,7 @@ class FirebaseManager {
       })
     }
 
-  class func createUser(email: String, password: String, userName: String, completion: @escaping (Bool, Error?) -> ()) {
+  class func signUp(email: String, password: String, userName: String, completion: @escaping (Bool, Error?) -> ()) {
     FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
       if user != nil {
 

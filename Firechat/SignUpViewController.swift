@@ -38,7 +38,7 @@ class SignUpViewController: UIViewController {
 
     if userNameField.text != nil {
 
-        FirebaseManager.createUser(email: emailField.text!, password: passwordField.text!, userName: userNameField.text!, completion: { (bool, error) in
+        FirebaseManager.signUp(email: emailField.text!, password: passwordField.text!, userName: userNameField.text!, completion: { (bool, error) in
           if bool == false {
             let alertVC = UIAlertController(title: "Creation Failed", message: error?.localizedDescription, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "ok", style: .default, handler: { (action) in

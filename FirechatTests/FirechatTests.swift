@@ -8,6 +8,8 @@
 
 import XCTest
 import Pods_Firechat
+import FirebaseAuth
+import Firebase
 
 @testable import Firechat
 
